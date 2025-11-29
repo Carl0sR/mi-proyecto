@@ -3,7 +3,7 @@ import { TrendingUp, Users, Target, AlertCircle, Zap, Shield, Smartphone, Databa
 
 export default function MarketAnalysis() {
   const [activeTab, setActiveTab] = useState('overview');
-  const [selectedOpportunity, setSelectedOpportunity] = useState(null);
+  const [selectedOpportunity, setSelectedOpportunity] = useState<number | null>(null);
 
   const marketData = {
     size: "580B€",
